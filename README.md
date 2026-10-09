@@ -1,6 +1,6 @@
 # ML for Healthcare & Predictive Analytics: interactive app
 
-[![Streamlit](https://img.shields.io/badge/Streamlit-live-1d6b55?logo=streamlit)](https://ml-healthcare-app.streamlit.app)
+[![Streamlit](https://img.shields.io/badge/Streamlit-live-1d6b55?logo=streamlit)](https://ml-healthcare-ai.streamlit.app)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb)
 [![Website](https://img.shields.io/badge/website-github.io-blue)](https://harshini-suresha.github.io/ml-healthcare-app/)
 [![nbviewer](https://img.shields.io/badge/view-nbviewer-orange)](https://nbviewer.org/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb)
@@ -13,7 +13,7 @@ Multipage Streamlit app + Colab notebook for four supervised-learning projects: 
 
 | What | Link |
 |---|---|
-| 🚀 Live Streamlit app | https://ml-healthcare-app.streamlit.app |
+| 🚀 Live Streamlit app | https://ml-healthcare-ai.streamlit.app |
 | 🌐 Website (GitHub Pages) | https://harshini-suresha.github.io/ml-healthcare-app/ |
 | ▶ Colab notebook | https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb |
 | 📓 Notebook file (.ipynb) | [raw .ipynb](https://raw.githubusercontent.com/Harshini-Suresha/ml-healthcare-app/main/ML_Healthcare_Demo.ipynb) · [nbviewer preview](https://nbviewer.org/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb) |
