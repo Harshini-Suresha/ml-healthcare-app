@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML for Healthcare &amp; Predictive Analytics — Harshini Suresha</title>
+<meta name="description" content="Interactive Streamlit app + Colab notebook for four supervised-learning healthcare projects: diabetes, breast cancer, heart disease, autism.">
+<style>
+:root{--teal:#1d6b55;--red:#c8283b;--bg:#e8f3e6;--card:#ffffff;--ink:#13281d;--muted:#4c6a58}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1020px;margin:0 auto;padding:24px}
+.hero{background:var(--card);border-radius:16px;padding:32px;border:1px solid #cfe3cf}
+.hero h1{margin:0 0 8px;font-size:32px}.hero p{margin:6px 0;color:var(--muted)}
+.badges img{margin:4px 4px 0 0}
+.btns{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--teal);color:#fff}.btn.dark{background:var(--ink);color:#fff}.btn.light{background:#fff;color:var(--teal);border:2px solid var(--teal)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:20px 0}
+.card{background:var(--card);border-radius:14px;padding:18px;border:1px solid #cfe3cf}
+.card h3{margin:0 0 6px}.card p{margin:6px 0;color:var(--muted);font-size:14px}
+.tag{display:inline-block;font-size:12px;background:#d5e7d3;color:var(--teal);border-radius:20px;padding:2px 10px;margin:2px 4px 2px 0}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #dfeee0}th{background:#d5e7d3}
+code{background:#d5e7d3;padding:2px 6px;border-radius:6px;font-size:13px}
+.footer{color:var(--muted);font-size:13px;margin:24px 0}
+.warn{background:#fff8e6;border:1px solid #f0d48a;border-radius:12px;padding:12px 16px;margin:16px 0;font-size:14px}
+@media(max-width:640px){.hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+<p>🫀 Harshini Suresha · Machine Learning for Healthcare</p>
+<h1>ML for Healthcare &amp; Predictive Analytics</h1>
+<p>Interactive <b>Streamlit app</b> + <b>Colab notebook</b> for four supervised-learning projects:
+diabetes (KNN), breast cancer (KNN vs Logistic Regression), heart disease (neural network),
+autism screening (3 classifiers + diff view).</p>
+<div class="badges">
+<a href="https://ml-healthcare-app.streamlit.app"><img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-live-1d6b55?logo=streamlit"></a>
+<a href="https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb"><img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+<a href="https://github.com/Harshini-Suresha/ml-healthcare-app"><img alt="GitHub" src="https://img.shields.io/github/stars/Harshini-Suresha/ml-healthcare-app?style=social"></a>
+</div>
+<div class="btns">
+<a class="btn primary" href="https://ml-healthcare-app.streamlit.app">🚀 Live Streamlit app</a>
+<a class="btn dark" href="https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb">▶ Open in Colab</a>
+<a class="btn light" href="https://raw.githubusercontent.com/Harshini-Suresha/ml-healthcare-app/main/ML_Healthcare_Demo.ipynb">📓 Notebook (.ipynb)</a>
+<a class="btn light" href="https://github.com/Harshini-Suresha/ml-healthcare-app">⭐ GitHub repo</a>
+</div>
+<p style="font-size:13px">Static site: <code>https://harshini-suresha.github.io/ml-healthcare-app/</code> ·
+Notebook preview: <a href="https://nbviewer.org/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb">nbviewer</a></p>
+</div>
+
+<div class="warn">⚠️ Educational demonstration built from public datasets. Not a medical device and not for clinical decisions.</div>
+
+<h2>The four projects</h2>
+<div class="grid">
+<div class="card"><h3>🩸 Diabetes</h3><span class="tag">KNN</span><span class="tag">768 records</span><p>Missing-value zeros, scaling shootout, k-tuning curve, patient scorer with nearest-neighbour voters.</p></div>
+<div class="card"><h3>🎗️ Breast cancer</h3><span class="tag">KNN vs LogReg</span><span class="tag">569 records</span><p>CV-chosen K, grid-searched Logistic Regression, ROC curves, record-by-record probability check.</p></div>
+<div class="card"><h3>❤️ Heart disease</h3><span class="tag">13-8-14-1 network</span><span class="tag">303 patients</span><p>Train the neural net live, watch loss/accuracy curves, score a new patient.</p></div>
+<div class="card"><h3>🧩 Autism screening</h3><span class="tag">LR / Boosted / SVM</span><span class="tag">ROC-AUC</span><p>Cleaning + oversampling pipeline, overfitting check, per-model confusion matrices.</p></div>
+</div>
+<div class="card"><h3>⚖️ New: Compare page</h3><p>Diff any two configs A vs B — diabetes preprocessing, breast-cancer models, heart training runs, autism models — with Δ (B − A) metric tables and side-by-side confusion matrices.</p></div>
+
+<h2>Links</h2>
+<table>
+<tr><th>What</th><th>Link</th></tr>
+<tr><td>Live app (Streamlit Cloud)</td><td><a href="https://ml-healthcare-app.streamlit.app">ml-healthcare-app.streamlit.app</a></td></tr>
+<tr><td>Run notebook (Colab)</td><td><a href="https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb">Open in Colab</a></td></tr>
+<tr><td>Notebook file (.ipynb)</td><td><a href="https://raw.githubusercontent.com/Harshini-Suresha/ml-healthcare-app/main/ML_Healthcare_Demo.ipynb">Download raw .ipynb</a> · <a href="https://nbviewer.org/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb">nbviewer preview</a></td></tr>
+<tr><td>Repo</td><td><a href="https://github.com/Harshini-Suresha/ml-healthcare-app">github.com/Harshini-Suresha/ml-healthcare-app</a></td></tr>
+<tr><td>This website</td><td><a href="https://harshini-suresha.github.io/ml-healthcare-app/">harshini-suresha.github.io/ml-healthcare-app</a></td></tr>
+</table>
+
+<h2>Run locally</h2>
+<p><code>pip install -r requirements.txt</code> then <code>streamlit run app.py</code>. Multipage app: Home (<code>app.py</code>), shared code (<code>ui_common.py</code>, <code>ml_core.py</code>), pages in <code>pages/</code>.</p>
+
+<h2>Deploy your own copy</h2>
+<p>1. Push to a public repo named <code>ml-healthcare-app</code>. 2. Streamlit: <a href="https://share.streamlit.io">share.streamlit.io</a> → Create app → repo/branch <code>main</code>, file <code>app.py</code> → Deploy. 3. Pages: repo Settings → Pages → Deploy from branch <code>main</code>, folder <code>/ (root)</code> — this <code>index.html</code> is served.</p>
+
+<div class="footer">Contact: <a href="mailto:harshinisuresha7@gmail.com">harshinisuresha7@gmail.com</a> · <a href="https://github.com/Harshini-Suresha">GitHub @Harshini-Suresha</a></div>
+</div>
+</body>
+</html>
