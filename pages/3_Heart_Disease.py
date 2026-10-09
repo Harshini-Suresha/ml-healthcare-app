@@ -2,14 +2,14 @@
 import streamlit as st
 
 import ml_core as mc
-from ui_common import DISCLAIMER, c_heart, get_data, pct, show, sidebar_links
+from ui_common import c_heart, get_data, pct, show, sidebar_links
 
-st.set_page_config(page_title="Heart disease — neural network", page_icon="🫀", layout="wide")
-st.sidebar.title("🫀 ML for Healthcare")
+st.set_page_config(page_title="Heart disease — neural network", layout="wide")
+st.sidebar.title("ML for Healthcare")
 sidebar_links()
 
 st.header("Heart disease: artificial neural network")
-st.caption(DISCLAIMER + " This page trains a scikit-learn network with the same 13-8-14-1 layout as the Keras notebook.")
+st.caption("This page trains a scikit-learn network with the same 13-8-14-1 layout as the Keras notebook.")
 df = get_data("heart.csv", "Heart disease CSV (13 attributes + target)", "heart_up")
 if df is None:
     st.stop()

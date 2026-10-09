@@ -3,14 +3,13 @@ import pandas as pd
 import streamlit as st
 
 import ml_core as mc
-from ui_common import DISCLAIMER, c_bc, pct, show, sidebar_links
+from ui_common import c_bc, pct, show, sidebar_links
 
-st.set_page_config(page_title="Breast cancer — KNN vs Logistic Regression", page_icon="🫀", layout="wide")
-st.sidebar.title("🫀 ML for Healthcare")
+st.set_page_config(page_title="Breast cancer — KNN vs Logistic Regression", layout="wide")
+st.sidebar.title("ML for Healthcare")
 sidebar_links()
 
 st.header("Breast cancer: KNN versus tuned Logistic Regression")
-st.caption(DISCLAIMER)
 src = st.radio("Data", ["Built-in Wisconsin diagnostic dataset", "Upload my own CSV"], horizontal=True)
 if src.startswith("Built-in"):
     df, target, positive = mc.load_breast_cancer_df(), "malignant", 1

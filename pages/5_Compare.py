@@ -4,16 +4,16 @@ import streamlit as st
 
 import ml_core as mc
 from ui_common import (
-    DISCLAIMER, c_autism, c_bc, c_diab_df, c_fit, c_heart,
+    c_autism, c_bc, c_diab_df, c_fit, c_heart,
     get_data, pct, show, sidebar_links,
 )
 
-st.set_page_config(page_title="Compare — diff two models", page_icon="⚖️", layout="wide")
-st.sidebar.title("🫀 ML for Healthcare")
+st.set_page_config(page_title="Compare — diff two models", layout="wide")
+st.sidebar.title("ML for Healthcare")
 sidebar_links()
 
-st.header("⚖️ Compare: diff two configurations")
-st.caption(DISCLAIMER + " Pick a project, set Config A and Config B, and see the metric deltas (B − A).")
+st.header("Compare: diff two configurations")
+st.caption("Pick a project, set Config A and Config B, and see the metric deltas (B − A).")
 tab_d, tab_b, tab_h, tab_a = st.tabs(["Diabetes diff", "Breast cancer diff", "Heart diff", "Autism diff"])
 
 # ------------------------------------------------------------------ diabetes

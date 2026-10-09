@@ -22,9 +22,6 @@ STREAMLIT_URL = "https://ml-healthcare-ai.streamlit.app"
 COLAB_URL = "https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb"
 NB_RAW_URL = "https://raw.githubusercontent.com/Harshini-Suresha/ml-healthcare-app/main/ML_Healthcare_Demo.ipynb"
 NBVIEWER_URL = "https://nbviewer.org/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb"
-DISCLAIMER = "Educational demonstration built from public datasets. Not a medical device and not for clinical decisions."
-
-
 def show(fig):
     st.pyplot(fig)
     plt.close(fig)

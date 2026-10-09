@@ -2,14 +2,13 @@
 import streamlit as st
 
 import ml_core as mc
-from ui_common import DISCLAIMER, c_compare, c_diab_df, c_fit, c_sweep, pct, show, sidebar_links
+from ui_common import c_compare, c_diab_df, c_fit, c_sweep, pct, show, sidebar_links
 
-st.set_page_config(page_title="Diabetes — KNN study", page_icon="🫀", layout="wide")
-st.sidebar.title("🫀 ML for Healthcare")
+st.set_page_config(page_title="Diabetes — KNN study", layout="wide")
+st.sidebar.title("ML for Healthcare")
 sidebar_links()
 
 st.header("Diabetes: K-Nearest Neighbors study")
-st.caption(DISCLAIMER)
 df = c_diab_df()
 t1, t2, t3 = st.tabs(["Explore the data", "Model lab", "Score a patient"])
 

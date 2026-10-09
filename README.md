@@ -7,17 +7,15 @@
 
 Multipage Streamlit app + Colab notebook for four supervised-learning projects: diabetes (KNN), breast cancer (KNN vs Logistic Regression), heart disease (neural network) and autism spectrum disorder (three classifiers) — plus a **Compare page** that diffs any two configs A vs B.
 
-> Educational demonstration built from public datasets. Not a medical device and not for clinical decisions.
-
 ## Links
 
 | What | Link |
 |---|---|
-| 🚀 Live Streamlit app | https://ml-healthcare-ai.streamlit.app |
-| 🌐 Website (GitHub Pages) | https://harshini-suresha.github.io/ml-healthcare-app/ |
-| ▶ Colab notebook | https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb |
-| 📓 Notebook file (.ipynb) | [raw .ipynb](https://raw.githubusercontent.com/Harshini-Suresha/ml-healthcare-app/main/ML_Healthcare_Demo.ipynb) · [nbviewer preview](https://nbviewer.org/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb) |
-| ⭐ Repo | https://github.com/Harshini-Suresha/ml-healthcare-app |
+| Live Streamlit app | https://ml-healthcare-ai.streamlit.app |
+| Website (GitHub Pages) | https://harshini-suresha.github.io/ml-healthcare-app/ |
+| Colab notebook | https://colab.research.google.com/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb |
+| Notebook file (.ipynb) | [raw .ipynb](https://raw.githubusercontent.com/Harshini-Suresha/ml-healthcare-app/main/ML_Healthcare_Demo.ipynb) · [nbviewer preview](https://nbviewer.org/github/Harshini-Suresha/ml-healthcare-app/blob/main/ML_Healthcare_Demo.ipynb) |
+| Repo | https://github.com/Harshini-Suresha/ml-healthcare-app |
 
 ## What is in this folder
 

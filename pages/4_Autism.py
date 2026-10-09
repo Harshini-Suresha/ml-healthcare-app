@@ -5,14 +5,13 @@ import pandas as pd
 import streamlit as st
 
 import ml_core as mc
-from ui_common import DISCLAIMER, c_autism, get_data, show, sidebar_links
+from ui_common import c_autism, get_data, show, sidebar_links
 
-st.set_page_config(page_title="Autism — screening classification", page_icon="🫀", layout="wide")
-st.sidebar.title("🫀 ML for Healthcare")
+st.set_page_config(page_title="Autism — screening classification", layout="wide")
+st.sidebar.title("ML for Healthcare")
 sidebar_links()
 
 st.header("Autism spectrum disorder: screening-based classification")
-st.caption(DISCLAIMER)
 raw = get_data("autism_train.csv", "Autism screening CSV (Kaggle 'Autism Prediction' train.csv layout)", "asd_up")
 if raw is None:
     st.stop()

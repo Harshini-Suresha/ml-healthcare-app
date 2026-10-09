@@ -6,14 +6,14 @@ Pages live in pages/: 1_Diabetes, 2_Breast_Cancer, 3_Heart_Disease, 4_Autism, 5_
 import streamlit as st
 
 from ui_common import (
-    AUTHOR_GITHUB, COLAB_URL, DISCLAIMER, EMAIL, GITHUB,
+    AUTHOR_GITHUB, COLAB_URL, EMAIL, GITHUB,
     NB_RAW_URL, NBVIEWER_URL, SITE_URL, STREAMLIT_URL, sidebar_links,
 )
 
-st.set_page_config(page_title="ML for Healthcare & Predictive Analytics", page_icon="🫀", layout="wide")
+st.set_page_config(page_title="ML for Healthcare & Predictive Analytics", layout="wide")
 
-st.sidebar.title("🫀 ML for Healthcare")
-st.sidebar.write("Pick a project from the **Pages** list above 👆")
+st.sidebar.title("ML for Healthcare")
+st.sidebar.write("Pick a project from the **Pages** list above")
 sidebar_links()
 
 st.title("ML for Healthcare & Predictive Analytics")
@@ -31,10 +31,10 @@ c[3].metric("Autism", "3 models", "ROC-AUC comparison")
 
 st.subheader("Open the project")
 l1, l2, l3, l4 = st.columns(4)
-l1.link_button("🚀 Live Streamlit app", STREAMLIT_URL)
-l2.link_button("▶ Open in Colab", COLAB_URL)
-l3.link_button("📓 Notebook (.ipynb)", NB_RAW_URL)
-l4.link_button("⭐ GitHub repo", GITHUB)
+l1.link_button("Live Streamlit app", STREAMLIT_URL)
+l2.link_button("Open in Colab", COLAB_URL)
+l3.link_button("Notebook (.ipynb)", NB_RAW_URL)
+l4.link_button("GitHub repo", GITHUB)
 st.caption(f"Static site (GitHub Pages): {SITE_URL} · Notebook preview: {NBVIEWER_URL}")
 
 st.subheader("What you can do here")
@@ -45,6 +45,5 @@ st.markdown(
     "- **Autism:** run the cleaning, oversampling and three-model comparison, and inspect overfitting.\n"
     "- **Compare:** diff any two configurations (A vs B) and see the metric deltas."
 )
-st.caption(DISCLAIMER)
 st.subheader("Contact")
 st.markdown(f"Questions or want to collaborate? Email [{EMAIL}](mailto:{EMAIL}) or visit [GitHub]({AUTHOR_GITHUB}).")
